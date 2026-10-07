@@ -1,0 +1,28 @@
+{
+  "tensor_parallel_size": 1,
+  "expert_parallel_size": 1,
+  "data_parallel_size": 1,
+  "max_model_len": 200000,
+  "max_num_batched_tokens": 32768,
+  "engine_prefill_chunk_size": 32768,
+  "enable_prefix_caching": true,
+  "decode_graph": true,
+  "gpu_memory_utilization": 0.9,
+  "max_num_seqs_in_batch": 10,
+  "max_decoding_seqs": 10,
+  "max_num_seqs_in_gpu": 44,
+  "decode_graph_capture_sizes": [
+    1,
+    2,
+    4,
+    8,
+    10
+  ],
+  "sparse_method": "h2o",
+  "h2o_prefill_budget": 8192,
+  "h2o_decode_budget": 4096,
+  "h2o_recent_ratio": 0.2,
+  "h2o_prefill_score_window": 128,
+  "sparse_prefill_score_mode": "logits",
+  "prefix_cache_mode": "chain"
+}

@@ -1,0 +1,53 @@
+{
+  "split": "development",
+  "workload": {
+    "name": "synthetic-demo",
+    "model": "GLM-4.7-Flash",
+    "objective": "makespan",
+    "query_concurrency": 12,
+    "shape": "synthetic-short-main-long-reader"
+  },
+  "query_ids": [
+    "synthetic-dev-1",
+    "synthetic-dev-2"
+  ],
+  "expected_queries": 2,
+  "finished_queries": 2,
+  "valid": true,
+  "compatible": true,
+  "quality_pass": true,
+  "stability_pass": true,
+  "makespan_seconds": 12,
+  "supported_main": [
+    "vllm",
+    "omnikv"
+  ],
+  "supported_reader": [
+    "vllm",
+    "h2o",
+    "snapkv"
+  ],
+  "max_query_concurrency": 12,
+  "engine_revisions": {
+    "main": "synthetic-not-measured",
+    "reader": "synthetic-not-measured"
+  },
+  "engine_parameters": {
+    "main": {
+      "max_model_len": 202752,
+      "max_num_batched_tokens": 32768,
+      "max_num_seqs": 16,
+      "gpu_memory_utilization": 0.94,
+      "enable_prefix_caching": true,
+      "worker_cls": "bcgraph.vllm_worker.WaitForMemoryWorker"
+    },
+    "reader": {
+      "max_model_len": 202752,
+      "max_num_batched_tokens": 16384,
+      "max_num_seqs": 16,
+      "gpu_memory_utilization": 0.92,
+      "enable_prefix_caching": true
+    }
+  },
+  "audit_sha256": "355ad68ee42f4106159021f0f91d687e42b53913460ef3db7ea7384e1f527b74"
+}

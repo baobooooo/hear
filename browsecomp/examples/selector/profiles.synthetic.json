@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "split": "development",
+  "synthetic": true,
+  "workload": {
+    "name": "synthetic-demo",
+    "model": "GLM-4.7-Flash",
+    "objective": "makespan",
+    "query_concurrency": 12,
+    "shape": "synthetic-short-main-long-reader"
+  },
+  "candidates": [
+    {
+      "name": "A",
+      "config": "A.yaml",
+      "config_sha256": "97b5344466335dbc68d44221c4ef813baccc5bcdbb6cdf98ca68d4b9b910e271",
+      "evidence": "A-evidence.json",
+      "evidence_sha256": "0118ad3db4eb8b7f0ce6af91c378d8fa588dc793182de6cdd90482b507dd5e6c"
+    },
+    {
+      "name": "B",
+      "config": "B.yaml",
+      "config_sha256": "325f4bbf72be2a67e5eff483266ba2a3ae8fa9e7458bc0273fab94a95c54fa07",
+      "evidence": "B-evidence.json",
+      "evidence_sha256": "7d26196f474161765a5ea92b171f2af7ad9870800ed8a9658763b8d6f0d6d42b"
+    },
+    {
+      "name": "C",
+      "config": "C.yaml",
+      "config_sha256": "853594835cd6732f8ac335f1caad1981b8a10e45810a0ee7515bebddeba92a16",
+      "evidence": "C-evidence.json",
+      "evidence_sha256": "aa1f846f97477f447a47755c1ae139e732192063a20ae37a00a440152b572782"
+    },
+    {
+      "name": "D",
+      "config": "D.yaml",
+      "config_sha256": "d0dd71910ecb2767b4ef5f62ab13858f7a3ea53b7525f24e914cef94d6c993e7",
+      "evidence": "D-evidence.json",
+      "evidence_sha256": "43f0218a5feff1e546bd7ae20111954757e4a893d230bc456f36071c32b39761"
+    },
+    {
+      "name": "E",
+      "config": "E.yaml",
+      "config_sha256": "66965fdafb6ad2942efc9ba4d08e5211b6323ace9cf7301ce87a6d087a96c944",
+      "evidence": "E-evidence.json",
+      "evidence_sha256": "1e04e2699ea438642b0dcedad678c76c2a467b7066c299c3925c68f08f165926"
+    },
+    {
+      "name": "F",
+      "config": "F.yaml",
+      "config_sha256": "aa1d9d098ca9f499cc3880e9b01736b4b9519aaae891c8e531da3ce8de21e287",
+      "evidence": "F-evidence.json",
+      "evidence_sha256": "552362307dd2ff98f99432419a56139fb494e8cc4264e5ac9285e7dc6705d022"
+    }
+  ]
+}

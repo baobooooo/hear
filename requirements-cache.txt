@@ -1,0 +1,7 @@
+# Known package versions from the experiment; not a full CUDA environment lockfile.
+vllm==0.26.0
+langgraph==1.2.11
+msgspec
+pyzmq
+numpy
+matplotlib

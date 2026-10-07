@@ -1,0 +1,7 @@
+arm,capacity_retries,completed,e2e_mean_min,empty_articles,failed,main_stage_s,makespan_h,speedup,sub_reuse,sub_stage_s,throughput_per_h
+dense-dense,0,99,29.46,4,1,236,5.93,1.0,0.0,4763,16.7
+omnikv-dense,0,100,30.41,2,0,199,6.17,0.96,0.0,5059,16.2
+dense-h2o,1210,100,13.17,4,0,381,2.76,2.15,0.495,716,36.3
+omnikv-h2o,867,100,12.21,1,0,347,2.42,2.45,0.498,700,41.3
+dense-snapkv,0,100,15.13,1,0,378,2.85,2.08,0.563,1188,35.1
+omnikv-snapkv,0,100,14.7,1,0,324,2.76,2.15,0.578,1190,36.3

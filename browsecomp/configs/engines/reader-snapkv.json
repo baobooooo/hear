@@ -1,0 +1,31 @@
+{
+  "enable_prefix_caching": true,
+  "prefix_cache_mode": "chain",
+  "sparse_method": "snapkv",
+  "max_model_len": 202752,
+  "engine_prefill_chunk_size": 16384,
+  "max_num_batched_tokens": 16384,
+  "tensor_parallel_size": 1,
+  "expert_parallel_size": 1,
+  "data_parallel_size": 1,
+  "decode_graph": true,
+  "max_num_seqs_in_batch": 12,
+  "max_num_seqs_in_gpu": 36,
+  "max_decoding_seqs": 12,
+  "gpu_memory_utilization": 0.95,
+  "sparse_prefill_score_mode": "logits",
+  "sink_keep_tokens": 64,
+  "recent_keep_tokens": 512,
+  "decode_keep_tokens": 4096,
+  "snapkv_window_size": 32,
+  "snapkv_num_full_layers": 0,
+  "pool_kernel_size": 1,
+  "prefill_sparse_method": "",
+  "decode_graph_capture_sizes": [
+    1,
+    2,
+    4,
+    8,
+    12
+  ]
+}

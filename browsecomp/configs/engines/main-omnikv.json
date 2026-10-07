@@ -1,0 +1,21 @@
+{
+  "enable_prefix_caching": true,
+  "prefix_cache_mode": "radix",
+  "sparse_method": "omnikv",
+  "max_model_len": 202752,
+  "engine_prefill_chunk_size": 32768,
+  "max_num_batched_tokens": 32768,
+  "tensor_parallel_size": 1,
+  "expert_parallel_size": 1,
+  "data_parallel_size": 1,
+  "decode_graph": true,
+  "max_num_seqs_in_batch": 4,
+  "max_num_seqs_in_gpu": 16,
+  "max_decoding_seqs": 4,
+  "gpu_memory_utilization": 0.94,
+  "full_attention_layers": "auto",
+  "decode_keep_tokens": 4096,
+  "sink_keep_tokens": 8,
+  "recent_keep_tokens": 256,
+  "mla_prefill_workspace_bytes": 8589934592
+}

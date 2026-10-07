@@ -1,0 +1,32 @@
+{
+  "tensor_parallel_size": 1,
+  "expert_parallel_size": 1,
+  "data_parallel_size": 1,
+  "max_model_len": 200000,
+  "max_num_batched_tokens": 32768,
+  "engine_prefill_chunk_size": 32768,
+  "enable_prefix_caching": true,
+  "decode_graph": true,
+  "gpu_memory_utilization": 0.9,
+  "max_num_seqs_in_batch": 10,
+  "max_decoding_seqs": 10,
+  "max_num_seqs_in_gpu": 16,
+  "decode_graph_capture_sizes": [
+    1,
+    2,
+    4,
+    8,
+    10
+  ],
+  "sparse_method": "omnikv",
+  "full_attention_layers": [
+    0,
+    3,
+    9,
+    18,
+    22,
+    27,
+    43
+  ],
+  "prefix_cache_mode": "radix"
+}

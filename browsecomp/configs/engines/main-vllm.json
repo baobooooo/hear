@@ -1,0 +1,8 @@
+{
+  "max_model_len": 202752,
+  "max_num_batched_tokens": 32768,
+  "max_num_seqs": 16,
+  "gpu_memory_utilization": 0.94,
+  "enable_prefix_caching": true,
+  "worker_cls": "bcgraph.vllm_worker.WaitForMemoryWorker"
+}

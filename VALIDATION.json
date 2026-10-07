@@ -1,0 +1,13 @@
+{
+  "python_syntax_files": 889,
+  "source_preservation_files": 468,
+  "browsecomp_cohort_unique_ids": 208,
+  "browsecomp_formal_configs": 6,
+  "selector_example_hashes_checked": 12,
+  "source_errors": [],
+  "identity_scan_findings": [],
+  "three_benchmark_metric_mismatches": [],
+  "browsecomp_pytest": "not run: required test environment unavailable",
+  "browsecomp_result_verification": "not possible: formal outputs not supplied",
+  "gpu_runs": 0
+}

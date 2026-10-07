@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+.env
+.env.*
+secrets/
+*.key
+*.pem
+*.log
+runs/
+.venv/
+.conda/
+cache_coordination/analysis/paper/

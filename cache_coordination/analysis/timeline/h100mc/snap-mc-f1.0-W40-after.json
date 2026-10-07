@@ -1,0 +1,11 @@
+{
+ "vllm:kv_offload_total_bytes_total{transfer_type=\"CPU_to_GPU\"}": 142194769920.0,
+ "vllm:kv_offload_total_bytes_total{transfer_type=\"GPU_to_CPU\"}": 3413731442688.0,
+ "vllm:kv_offload_total_time_total{transfer_type=\"CPU_to_GPU\"}": 4.515570634484291,
+ "vllm:kv_offload_total_time_total{transfer_type=\"GPU_to_CPU\"}": 69.44174951356646,
+ "vllm:prefix_cache_queries_total": 151107810.0,
+ "vllm:prefix_cache_hits_total": 5591232.0,
+ "vllm:external_prefix_cache_queries_total": 24447200.0,
+ "vllm:external_prefix_cache_hits_total": 929024.0,
+ "vllm:num_preemptions_total": 314.0
+}

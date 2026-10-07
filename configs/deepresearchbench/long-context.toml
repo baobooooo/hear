@@ -1,0 +1,62 @@
+[run]
+instance_id = 1
+subagents = 4
+documents_per_subagent = 200
+report_rounds = 3
+max_document_chars = 100000
+full_document_chars = 200000
+round_input_token_targets = [120000, 150000, 180000]
+research_output_tokens = 512
+review_document_tokens = 40000
+review_documents_per_agent = 5
+writer_history_tokens = 60000
+writer_document_tokens = 40000
+review_instruction_chars = 1000
+review_analysis_chars = 1500
+review_assessment_chars = 3000
+main_context_token_cap = 150000
+review_max_tokens = 8192
+planner_retries = 2
+json_retries = 2
+research_target_chars = 0
+research_min_chars = 0
+research_max_chars = 0
+writer_target_chars = 0
+writer_min_chars = 0
+writer_max_chars = 0
+length_retries = 0
+judge = false
+
+[main_model]
+base_url = "http://127.0.0.1:23907/v1"
+model = "GLM-4.7-Flash"
+api_key = "EMPTY"
+temperature = 0.2
+top_p = 0.9
+max_tokens = 4096
+timeout_seconds = 7200
+max_concurrency = 4
+enable_thinking = true
+
+[researcher_model]
+base_url = "http://127.0.0.1:23908/v1"
+model = "GLM-4.7-Flash"
+api_key = "EMPTY"
+temperature = 0.2
+top_p = 0.9
+max_tokens = 512
+timeout_seconds = 7200
+max_concurrency = 4
+continuation_mode = "full_transcript"
+
+[retrieval]
+keys_file = "secrets/serper.keys"
+search_url = "https://google.serper.dev/search"
+search_via_proxy = false
+results_per_search = 10
+max_search_pages = 10
+per_key_concurrency = 5
+fetch_concurrency = 32
+search_timeout_seconds = 20
+fetch_timeout_seconds = 20
+fetch_retries = 1
